@@ -3,20 +3,32 @@
 }
 
 .App-logo {
-  height: 200px;
+  float: left;
+  height: 150px;
+  padding: 20px;
 }
 
 .App-header {
-  background-color: #222;
-  height: 300px;
+  background: #E4F1FE;
+  height: 200px;
   padding: 20px;
-  color: white;
+  color: black;
 }
 
 .App-title {
-  font-size: 1.5em;
+  text-align: center;
+  font-family: 'Lato','Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-size: 70px;
 }
 
-.App-intro {
+.App-newGame {
   font-size: large;
+}
+
+.App-currentGames {
+  font-size: large;
+}
+
+body {
+    background-image: url('./Sports.png');
 }
