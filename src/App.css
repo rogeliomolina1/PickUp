@@ -27,9 +27,22 @@
 }
 
 .App-currentGames {
-  font-size: large;
+  font-family: 'Lato';
 }
 
+.Activity{
+  float:left;
+  display: inline-block;
+}
+.Name{
+  float:Center;
+  display: inline-block;
+}
+.Location{
+  float:right;
+  display: inline-block;
+  padding-right: 30px
+}
 body {
     background-image: url('/Sports.png');
 }
@@ -59,4 +72,10 @@ input[type=submit] {
 
 input[type=submit]:hover {
     background-color: #45a049;
+}
+
+li {
+  list-style: none;
+  font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
+  border-bottom: 1px solid #ccc;
 }
