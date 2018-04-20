@@ -54,6 +54,7 @@ addGame(event) {
               ref="name"
               placeholder="Name"/>
            <input
+             id= 'location'
               type="text"
               ref="location"
               placeholder="Location"/>
