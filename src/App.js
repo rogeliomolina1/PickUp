@@ -1,20 +1,24 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
+import {CurrentGames} from './CurrentGames';
 
-class App extends Component {
+
+export class App extends React.Component {
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <img src="./logo.png" className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to PickUP</h1>
+          <img src="/logo.png" className="App-logo" alt="logo" />
+          <h1 className="App-title">The Hub for Connecting Players</h1>
         </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <h1 className="App-newGame">
+          To setup a pickup game please enter the required information below
+        </h1>
+
+      <section className="SubmissionHome">
+<CurrentGames games={this.props.games}/>
+        </section>
       </div>
     );
   }
 }
-
-export default App;
