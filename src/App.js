@@ -1,22 +1,7 @@
 import React from 'react';
 import './App.css';
 
-export let games = [{
-  id: 1,
-  sport: 'Soccer',
-  name: 'Rogelio',
-  location: 'Livermore'
-},{
-  id: 2,
-  sport: 'Basketball',
-  name: 'Tim',
-  location: 'Pleasanton'
-},{
-  id: 3,
-  sport: 'Surfing',
-  name: 'Brad',
-  location: 'Santa Cruz'
-}];
+export let games=[];
 
 export class App extends React.Component {
   render() {
@@ -38,10 +23,10 @@ export class App extends React.Component {
   }
 }
 
-class CurrentGames extends React.Component{
+export class CurrentGames extends React.Component{
   constructor(props) {
     super(props);
-    this.state={
+    this.state = {
       search: '',
       games: props.games
     };
@@ -66,7 +51,7 @@ addGame(event) {
 }
 
   render(){
-    let filteredGames = this.props.games.filter(
+    let filteredGames = this.state.games.filter(
       (game) => {
         return ((game.sport.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1)||
           (game.name.toLowerCase().indexOf(this.state.search.toLowerCase())!== -1)||
@@ -114,7 +99,7 @@ addGame(event) {
   }
 }
 
-class Game extends React.Component{
+export class Game extends React.Component{
   render(){
     return(
       <li>
