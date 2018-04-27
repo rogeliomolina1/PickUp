@@ -36,7 +36,7 @@ body {margin:0;}
     background-color: #111;
 }
 
-.active {
+.Nav .active {
   display: block;
   color: white;
   text-align: center;
