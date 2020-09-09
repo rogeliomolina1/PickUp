@@ -1,3 +1,2 @@
 ## Final Project for CMPS 115
-![GitHub Logo](/DemoScreenshots/Capture.png)
-Format: ![Alt Text](url)
+![Demo 1](PickUpRogelio/DemoScreenshots/Capture.png)
