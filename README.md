@@ -1,3 +1,3 @@
 ## Final Project for CMPS 115
-![GitHub Logo](/images/logo.png)
+![GitHub Logo](/DemoScreenshots/Capture.png)
 Format: ![Alt Text](url)
